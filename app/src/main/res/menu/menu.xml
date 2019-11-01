@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.android.rgd.my_option_menu.MainActivity">
+
+    <item
+        android:id="@+id/menu1"
+        android:title="HOME"
+        />
+
+    <item android:id="@+id/menu2"
+        android:title="โปรไฟล์"
+        />
+
+    <item android:id="@+id/menu3"
+        android:title="รายรับ - รายจ่าย"
+        />
+
+    <item android:id="@+id/menu4"
+        android:title="เป้าหมายการออม"
+        />
+
+    <item android:id="@+id/menu5"
+        android:title="สรุปรายการ"
+        />
+
+
+</menu>

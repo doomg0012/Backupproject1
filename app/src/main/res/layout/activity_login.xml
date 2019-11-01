@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_login"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25sp"/>
+    <EditText
+        android:id="@+id/profile_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="25dp"
+        android:hint="Input Username"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/profile_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Input Password"
+        android:textSize="20sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#33F7FF"
+        android:text="Login"
+        android:textSize="20sp"
+        android:layout_marginLeft="60dp"
+        android:onClick="login"
+         />
+
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#FF1744"
+        android:text="Cancel"
+        android:textSize="20sp"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btnlogin"
+        android:onClick="cancel"
+        />
+    </RelativeLayout>
+
+</LinearLayout>

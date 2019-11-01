@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".InsertActivity">
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:background="#81FDA9"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/un_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="name : "/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/un_id"
+            android:inputType="text"/>
+        <TextView
+            android:id="@+id/un_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/un_name"
+            android:textSize="20sp"
+            android:text="Username : "/>
+
+        <EditText
+            android:id="@+id/edt_username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/un_id"
+            android:layout_below="@+id/un_name"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/pw1_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/un_id"
+            android:textSize="20sp"
+            android:text="Password : "/>
+
+        <EditText
+            android:id="@+id/edt_pass1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/un_id"
+            android:layout_toRightOf="@+id/pw1_id"
+            android:inputType="textPassword"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/pw2_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_below="@+id/pw1_id"-->
+<!--            android:textSize="20sp"-->
+<!--            android:text="Confirm Pass :"/>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/edt_pass2"-->
+<!--            android:layout_width="270dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/pw1_id"-->
+<!--            android:layout_toRightOf="@+id/pw2_id"-->
+<!--            android:inputType="textPassword"/>-->
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:layout_marginTop="10dp"
+            android:background="#99FF7D"
+            android:text="Register"
+            android:textSize="20sp"
+            android:onClick="addProfile"
+            android:layout_marginLeft="70dp"/>
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:id="@+id/btncancel"
+            android:layout_marginTop="10dp"
+            android:background="#FC3C71"
+            android:text="Reset"
+            android:textSize="20sp"
+            android:onClick="reset"
+            android:layout_toRightOf="@+id/btnAdd"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
